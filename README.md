@@ -21,14 +21,23 @@ Similar Artists: Recommends artists similar to the ones searched.
 Technologies and Frameworks:
 
 Cloud Platform: AWS
+
 Backend: NodeJS
+
 Frontend: Bootstrap, Angular 7
+
 Architecture: MVC (Model-View-Controller)
+
 Libraries: Glide, Picasso, Volley
+
 API Integrations:
 
 Events and Concerts: Ticketmaster
+
 Music Streaming: Spotify
+
 Search: Google Custom Search
+
 Maps: Google Maps
+
 Social Media: Twitter
