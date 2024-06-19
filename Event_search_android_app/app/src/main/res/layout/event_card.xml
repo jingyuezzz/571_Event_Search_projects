@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/card_view"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="@dimen/card_margin"
+    app:cardCornerRadius="8dp"
+
+android:elevation="4dp">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/card_padding"
+    android:background="@color/black"
+    >
+
+
+    <ImageView
+        android:id="@+id/category_image"
+        android:layout_width="@dimen/category_image_size"
+        android:layout_height="@dimen/category_image_size"
+        android:layout_alignParentStart="true"
+         />
+
+
+    <TextView
+        android:id="@+id/event_name"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/category_image"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@id/category_image"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="Event name"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/item_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/venue_name"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/event_name"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/category_image"
+        android:text="Venue name"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/item_text_size"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:scrollHorizontally="true"/>
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="81dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/venue_name"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="14dp"
+        android:layout_toEndOf="@id/category_image"
+        android:text="category"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/item_text_size" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/venue_name"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="-59dp"
+        android:layout_toEndOf="@id/category_image"
+        android:text="date"
+        android:textSize="@dimen/item_text_size"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/venue_name"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="-22dp"
+        android:layout_toEndOf="@id/category_image"
+        android:text="time"
+        android:textSize="@dimen/item_text_size"
+        android:textColor="@android:color/white"/>
+
+
+    <ImageButton
+        android:id="@+id/favorite_button1"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/time"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="9dp"
+        android:layout_toEndOf="@+id/time"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_favorite_transparent" />
+
+
+</RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

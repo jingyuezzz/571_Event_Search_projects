@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shape"    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/shape">
+
+
+        <LinearLayout
+            android:id="@+id/linearlayout1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+           >
+
+            <TextView
+                android:id="@+id/artistsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Artists/Team"
+
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="14dp"/>
+
+            <TextView
+                android:id="@+id/detailVenueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Venue"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="14dp"/>
+
+            <TextView
+                android:id="@+id/detailDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="14dp"/>
+
+            <TextView
+                android:id="@+id/detailTimeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="14dp"/>
+
+            <TextView
+                android:id="@+id/genresTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Genres"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="14dp"/>
+
+            <TextView
+                android:id="@+id/priceRangesTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price Ranges"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="14dp"/>
+
+
+            <TextView
+                android:id="@+id/statusTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ticket Status"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="14dp"
+               />
+
+            <TextView
+                android:id="@+id/buyTicketUrlTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy Tickets At"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="14dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/artists_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Artists/Team"
+                android:textColor="@color/teal"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="14dp"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:singleLine="true"
+                android:scrollHorizontally="true"/>
+
+            <TextView
+                android:id="@+id/detailVenue_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Venue"
+                android:textColor="@color/teal"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="14dp"/>
+
+            <TextView
+                android:id="@+id/detailDate_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textColor="@color/teal"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="14dp"/>
+
+            <TextView
+                android:id="@+id/detailTime_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:textColor="@color/teal"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="14dp"/>
+
+            <TextView
+                android:id="@+id/genres_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Genres"
+                android:textColor="@color/teal"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="14dp"/>
+
+            <TextView
+                android:id="@+id/priceRanges_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price Ranges"
+                android:textColor="@color/teal"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="14dp"/>
+
+            <TextView
+                android:id="@+id/status_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ticket Status"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="14dp"
+                android:background="@drawable/shape2"
+                />
+
+            <TextView
+                android:id="@+id/buyUrl_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="14dp"
+                android:autoLink="web"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="Ticketmaster"
+                android:textColor="@color/teal"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/venue_image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        />
+    </LinearLayout>
+</ScrollView>
